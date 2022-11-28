@@ -12,9 +12,9 @@ body {
   align-items: center;
   background: rgb(0, 0, 0);
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 11%,
-    rgba(218, 215, 215, 1) 100%
+    96deg,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(51, 232, 165, 0.8823238768163515) 100%
   );
 }
 
@@ -60,13 +60,21 @@ body {
 .navbar-links:hover {
   color: #fbfdfb;
 }
+.brand {
+  font-family: "Michroma", sans-serif;
+  color: rgb(51, 232, 165);
+  font-weight: bold;
+}
+.semibrand {
+  color: rgb(50, 209, 84);
+}
 
 @media (max-width: 400px) {
   .toggle-button {
     display: flex;
   }
   .navbar-links {
-    /*display: none;*/
+    display: none;
     width: 100%;
   }
   .navbar {
