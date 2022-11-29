@@ -68,47 +68,87 @@ body {
 .semibrand {
   color: rgb(50, 209, 84);
 }
-.container_filler {
+
+/*reviews*/
+
+.body_2 {
+  background: rgb(51, 232, 165);
+  font-family: montserrat;
+  padding-top: 30px;
+}
+
+.section-header {
   position: relative;
-  width: 50%;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 900;
+  padding-bottom: 25px;
+  color: #fff;
 }
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
+.section-header:after {
+  content: "";
+  height: 3px;
+  width: 200px;
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #cecfcf;
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  transition: 0.5s ease;
+  left: calc(50% - 100px);
+  background: #fff;
+}
+.section-header span {
+  display: block;
+  font-size: 15px;
+  font-weight: 300;
+}
+.testimonials {
+  max-width: 1000px;
+  padding: 0 15px 50px;
+  margin: 0 auto 80px auto;
+}
+.single-item {
+  background: rgb(122, 117, 117);
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  margin: 50px 15px;
+  border-radius: 10px;
+}
+.profile {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.img-area {
+  margin: 0 15px 15px 15px;
+}
+.img-area img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 7px solid rgb(51, 232, 165);
+}
+.content {
+  font-size: 18px;
+}
+.content p {
+  text-align: justify;
+}
+.content p span {
+  font-size: 48px;
+  margin-right: 20px;
+  color: rgb(247, 247, 247);
+}
+.socials i {
+  margin-right: 25px;
+}
+.bio h4 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: rgb(51, 232, 165);
 }
 
-.container_filler:hover .overlay {
-  width: 100%;
-}
+/*navbar media*/
 
-.text {
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  white-space: nowrap;
-  align-items: center;
-}
-
-@media (max-width: 400px) {
+.carousel @media (max-width: 400px) {
   .toggle-button {
     display: flex;
   }
