@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!--
     <nav class="navbar navbar-expand-sm">
       <div class="brand-title">VA HNTR</div>
       <a href="#" class="toggle-button">
@@ -76,6 +77,50 @@
         </ul>
       </div>
     </nav>
+
+    edit-->
+
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light shadow-sm sticky-top nav_container"
+    >
+      <div class="container container-lg">
+        <a href="index.html" class="navbar-brand">
+          <div class="brand-title">VA HNTR</div>
+        </a>
+
+        <!-- HAMBURGER MENU -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto fw-bold gap-3">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Why Us?</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact Us!</a>
+            </li>
+            <a class="btn btn-outline-light" href="#" role="button">Log In</a>
+            <a class="btn btn-outline-dark" href="#" role="button">Sign Up</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!--showcase-->
     <section class="bg-light text-dark p-5 p-lg-0 text-center text-sm-start">
       <div class="container">
@@ -86,7 +131,13 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
               id iure praesentium, eligendi consequuntur repellat.
             </p>
-            <button class="btn btn-success btn-lg">Inquire Now!</button>
+            <button
+              class="btn btn-outline-success btn-lg"
+              href="#"
+              role="button"
+            >
+              Inquire Now!
+            </button>
           </div>
           <img
             class="img-fluid w-50 d-none d-sm-block"
@@ -259,7 +310,7 @@
     </section>
 
     <!--reviews-->
-    <section class="body_2">
+    <section id="body_2">
       <div class="container">
         <h1 class="section-header">
           Let's hear from our Clients!
@@ -529,7 +580,7 @@
           </div>
           <div class="col-lg-3 col-sm-6">
             <div class="single-box">
-              <h2>Recruitement</h2>
+              <h2>Recruitment</h2>
               <ul>
                 <li><a href="#">Multilingual Services</a></li>
                 <li><a href="#">Pooling</a></li>
