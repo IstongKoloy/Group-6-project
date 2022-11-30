@@ -41,7 +41,7 @@ body {
 .semibrand {
   color: rgb(50, 209, 84);
 }
-*/
+/*top vas*/
 
 /*reviews*/
 
@@ -195,6 +195,52 @@ body {
   background: rgb(51, 232, 165);
   color: #fff;
 }
+/*how it works*/
+.image-how {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+.container-how {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008cba;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.container-how:hover .overlay {
+  width: 100%;
+  background: linear-gradient(
+    96deg,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(51, 232, 165, 0.8823238768163515) 100%
+  );
+}
+
+.text-how {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
 /*footer*/
 footer {
   background: linear-gradient(
