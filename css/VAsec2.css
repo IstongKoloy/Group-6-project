@@ -11,71 +11,35 @@ body {
 background: linear-gradient(57deg, rgba(0,0,0,1) 0%, rgba(17,255,168,0.41780462184873945) 62%);
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(96deg,
-            rgba(0, 0, 0, 1) 15%,
-            rgba(51, 232, 165, 0.8823238768163515) 100%);
+..nav-item {
+    font-weight: 500;
+}
+
+.nav-item .nav-link:hover {
+    color: #19fe05;
+}
+
+.nav-link {
+    color: white;
 }
 
 .brand-title {
-    font-size: 1.5rem;
-    margin: 0.5rem;
     font-family: "Michroma", sans-serif;
     color: rgb(51, 232, 165);
+    font-weight: bold;
 }
 
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
-.navbar-links li a {
-    text-decoration: none;
-    color: rgb(12, 12, 12);
-    padding: 1rem;
-    display: block;
-}
-
-.navbar-links li:hover {
-    font-weight: bolder;
-}
-
-.toggle-button {
-    position: absolute;
-    top: 0.75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #555;
-    border-radius: 10px;
-}
-
-.navbar-links:hover {
-    color: #fbfdfb;
+.nav_container {
+    background: linear-gradient(96deg,
+            rgba(0, 0, 0, 1) 15%,
+            rgba(51, 232, 165, 0.8823238768163515) 100%);
 }
 
 #home {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
-    height: 840px;
+    height: 830px;
     justify-content: center;
     align-items: center;
     color: white;
@@ -84,7 +48,7 @@ background: linear-gradient(57deg, rgba(0,0,0,1) 0%, rgba(17,255,168,0.417804621
 #home::before {
     content: "";
     position: absolute;
-    top: 70px;
+    top: 50px;
     right: 0;
     background: url(https://media.gettyimages.com/id/580816425/photo/young-businesswoman-suffering-from-headache-at-desk-in-office.jpg?s=612x612&w=0&k=20&c=4QYrUurp9clkIG15zFeX-gl0HWZcIY6apZ9IzP6nbmA=) no-repeat center center/cover;
     height: 843px;
@@ -101,7 +65,7 @@ background: linear-gradient(57deg, rgba(0,0,0,1) 0%, rgba(17,255,168,0.417804621
     align-items: center;
     position: absolute;
     top: 30%;
-    left: 10%;
+    right: 10%;
 }
 
 .headings {
@@ -156,6 +120,7 @@ div .rating {
     font-size: 30px;
     font-family: 'Nerko One', cursive;
 }
+
 
 /* ABOUT SECTION */
 #about {
@@ -275,47 +240,66 @@ div .rating {
 
 
 /* FOOTER SECTION */
-.inner-footer {
-    margin: 0;
-    padding: 0;
-    background-color: #272727;
+footer {
     background: linear-gradient(96deg,
             rgba(0, 0, 0, 1) 15%,
             rgba(51, 232, 165, 0.8823238768163515) 100%);
+    padding: 86px 0;
 }
 
-.social-links {
-    display: flex;
-}
-
-.social-links ul {
-    padding: 10px;
-    display: flex;
-    width: 300px;
-    height: 30px;
-    margin: auto;
-}
-
-.social-items {
-    list-style: none;
-}
-
-.social-items a {
-    padding: 10px 20px;
-    font-size: 30px;
-    color: #6cccc6;
-
-}
-
-.outer-footer {
-    padding: 30px;
+.single-content {
     text-align: center;
-    color: black;
-    font-size: 19px;
-    font-family: 'Playfair Display', serif;
-    background: linear-gradient(96deg,
-            rgba(0, 0, 0, 1) 15%,
-            rgba(51, 232, 165, 0.8823238768163515) 100%);
+    padding: 115px 0;
+}
+
+.single-box p {
+    color: #fff;
+    line-height: 1.9;
+}
+
+.single-box h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.single-box .card-area i {
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.single-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.single-box ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 2.5;
+    font-weight: 100;
+}
+
+.single-box h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#basic-addon2 {
+    background: #05422f;
+    color: #fff;
+}
+
+.socials i {
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.footer-logo {
+    height: 100px;
+    width: 100px;
 }
 
 
@@ -335,7 +319,7 @@ div .rating {
         display: flex;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.5);
-        height: 730px;
+        height: 837px;
         justify-content: center;
         align-items: center;
         color: white;
@@ -366,26 +350,6 @@ div .rating {
     }
 }
 
-@media screen and (min-width: 761px) and (max-width: 928px) {
-
-    #pic {
-        flex-direction: column;
-        align-items: center;
-    }
-    #pic img {
-        width: 500px;
-        height: 300px;
-    }
-    .intro h2 {
-        text-align: center;
-        padding: 10px;
-        margin-top: 5%;
-    }
-
-    .bttn {
-       margin-left: 30%;
-    }
-}
 @media screen and (min-width: 429px) and (max-width: 599px) {
     body {
         background: rgb(131, 255, 210);
@@ -400,7 +364,7 @@ div .rating {
         display: flex;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.5);
-        height: 786px;
+        height: 837px;
         justify-content: center;
         align-items: center;
         color: white;
@@ -431,21 +395,18 @@ div .rating {
         margin-top: 5%;
     }
 }
+
+
 @media screen and (min-width: 600px) and (max-width: 760px) {
     body {
         background: rgb(131, 255, 210);
-    }
-
-    .navbar-links ul {
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     #home {
         display: flex;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.5);
-        height: 840px;
+        height: 838px;
         justify-content: center;
         align-items: center;
         color: white;
@@ -478,5 +439,106 @@ div .rating {
 
     .bttn {
         margin-left: 25%;
-     }
+    }
+}
+
+
+@media screen and (min-width: 761px) and (max-width: 928px) {
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 838px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+
+    #pic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pic img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .intro h2 {
+        text-align: center;
+        padding: 10px;
+        margin-top: 5%;
+    }
+
+    .bttn {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width: 929px) and (max-width: 991px) {
+
+    #home {
+        height: 838px;
+    }
+
+    #pic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pic img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .intro h2 {
+        text-align: center;
+        padding: 10px;
+        margin-top: 5%;
+    }
+
+    .bttn {
+        margin-left: 30%;
+    }
+}
+
+
+@media screen and (min-width: 930px) and (max-width: 1165px) {
+
+    #home {
+        height: 830px;
+    }
+
+    #pic {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pic img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .intro h2 {
+        text-align: center;
+        padding: 10px;
+        margin-top: 5%;
+    }
+
+    .bttn {
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 767px) {
+    .single-box {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .single-box {
+        margin-bottom: 50px;
+    }
 }
