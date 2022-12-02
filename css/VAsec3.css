@@ -7,8 +7,6 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(0,0,0);
-background: linear-gradient(57deg, rgba(0,0,0,1) 0%, rgba(17,255,168,0.41780462184873945) 62%);
 }
 
 .nav-item {
@@ -304,17 +302,6 @@ footer {
 
 
 @media screen and (max-width: 428px) {
-
-    body {
-        background: rgb(131, 255, 210);
-    }
-
-    .navbar-links ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-
     #home {
         display: flex;
         flex-direction: column;
@@ -351,15 +338,6 @@ footer {
 }
 
 @media screen and (min-width: 429px) and (max-width: 599px) {
-    body {
-        background: rgb(131, 255, 210);
-    }
-
-    .navbar-links ul {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     #home {
         display: flex;
         flex-direction: column;
@@ -398,11 +376,7 @@ footer {
 
 
 @media screen and (min-width: 600px) and (max-width: 760px) {
-    body {
-        background: rgb(131, 255, 210);
-    }
-
-    #home {
+     #home {
         display: flex;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.5);
