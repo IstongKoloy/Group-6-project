@@ -14,3 +14,9 @@
 .table-body tr:hover td a{
     color: rgb(51, 232, 165);
 }
+
+@media screen and (max-width: 500px){
+    .set-mobile {
+        display: none;
+    }
+}
