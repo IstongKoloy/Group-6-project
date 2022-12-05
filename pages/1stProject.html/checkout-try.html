@@ -67,7 +67,7 @@
                 </div>
                 <div class="item5">
                     <div class="sub-item5-item1">
-                        <button type="button" class="btn back-btn">Back</button>
+                        <button type="button" class="btn back-btn" onclick="backToInquire()">Back</button>
                     </div>
                     <div class="sub-item5-item2">
                         <button type="button" class="btn next-btn" onclick="thankyou()">Next Step</button>
@@ -81,6 +81,9 @@
     <script>
         function thankyou(){
           location.href="Thankyou.html";
+        }
+        function backToInquire(){
+            location.href="../inquiry-page.html";
         }
       </script>
 </body>

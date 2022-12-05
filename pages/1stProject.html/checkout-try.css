@@ -24,7 +24,7 @@ body {
     font-weight: 600;
     margin-bottom: 2vh;
     padding: 0 8%;
-    font-size: initial
+    font-size: 2em;
 }
 
 #details {
@@ -231,7 +231,7 @@ body {
   }
   
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     .input-fields{
         display: grid;
         grid-template-columns: 1fr;
