@@ -32,15 +32,15 @@
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
                         <input type="email" class="form-control" placeholder="Email" aria-label="Username"
-                            aria-describedby="basic-addon1" autofocus>
+                            aria-describedby="basic-addon1" autofocus required>
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock"></i></span>
                         <input type="password" class="form-control" placeholder="Password" aria-label="Username"
-                            aria-describedby="basic-addon1">
+                            aria-describedby="basic-addon1" required>
                     </div>
                     <div class="submit-div mb-3 w-100">
-                        <button type="button" class="btn submit-btn">Login</button>
+                        <button type="button" class="btn submit-btn" onclick="goToMain()">Login</button>
                     </div>
                     <hr>
                     <p class="separator">or</p>
@@ -102,7 +102,7 @@
                                     <label for="terms" class="px-2">Yes, I understand and agree to <a href="#">VA HNTR Terms of Service</a> and <a href="#">Privacy Policy</a>.</label>
                                 </div>
                                 <div class="reg-submit-wrap">
-                                    <button type="submit" class="btn btn-outline-success" id="regBtn-submit">Create my Account</button>
+                                    <button type="submit" class="btn btn-outline-success" id="regBtn-submit" onclick="goToLogin()">Create my Account</button>
                                 </div>
                             </div>
                             
@@ -138,7 +138,12 @@
             var reg = document.getElementById("register-container");
             reg.classList.remove("show");
             reg.classList.add("hide");
-
+        }
+        function goToMain(){
+            location.href="../index.html";
+        }
+        function goToLogin(){
+            location.href="./login.html";
         }
     </script>
 </body>
