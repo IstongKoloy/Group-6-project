@@ -38,7 +38,7 @@ a {
 }
 
 .email-container {
-  margin: 5% 25% 1% 25%;
+  margin: 5% 15% 1% 15%;
   background: #ffffff;
 }
 
@@ -46,4 +46,10 @@ footer {
   text-align: center;
   margin: 0;
   padding: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .email-container{
+    margin: 5% 0;
+  }
 }
