@@ -1,0 +1,16 @@
+.page-table{
+    margin-top: 20px;
+    box-shadow: 0 2px 4px 2px gray;
+    padding: 0 0 5px 0;
+    
+}
+.table{
+    border-radius: 5px 5px 0 0;
+}
+.table-body tr td a{
+    text-decoration: none;
+    color: black;
+}
+.table-body tr:hover td a{
+    color: rgb(51, 232, 165);
+}
